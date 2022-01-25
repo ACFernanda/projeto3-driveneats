@@ -36,6 +36,7 @@ h2 {
 
 main {
   margin-top: 123px;
+  margin-bottom: 108px;
 }
 
 h3 {
@@ -54,6 +55,7 @@ h3 {
   background-color: #ffffff;
   border-radius: 9px;
   margin-left: 19px;
+  margin-bottom: 27px;
 }
 
 .item img {
@@ -90,4 +92,29 @@ h3 {
   line-height: 18.75px;
   margin-left: 14px;
   margin-bottom: 13px;
+}
+
+footer {
+  height: 92px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.finalizar {
+  background-color: #cbcbcb;
+  color: #ffffff;
+  width: 364px;
+  height: 61px;
+  margin: 8px 40px;
+  border: none;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
 }
