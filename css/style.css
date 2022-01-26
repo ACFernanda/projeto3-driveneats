@@ -47,6 +47,13 @@ h3 {
   line-height: 32.28px;
   margin-left: 19px;
   margin-bottom: 17px;
+  margin-top: 20px;
+}
+
+.itens {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
 }
 
 .item {
@@ -55,7 +62,7 @@ h3 {
   background-color: #ffffff;
   border-radius: 9px;
   margin-left: 19px;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
 }
 
 .item img {
