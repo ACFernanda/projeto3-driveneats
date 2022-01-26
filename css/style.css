@@ -63,12 +63,19 @@ h3 {
   border-radius: 9px;
   margin-left: 19px;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .item img {
   width: 144px;
   height: 87px;
-  margin: 18px 14px 8px 14px;
+  margin: 5px 14px 0px 14px;
+}
+
+.item p {
+  width: 144px;
 }
 
 .item p:first-of-type {
@@ -110,18 +117,22 @@ footer {
   left: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .finalizar {
   background-color: #cbcbcb;
   color: #ffffff;
-  width: 364px;
+  width: 90%;
   height: 61px;
-  margin: 8px 40px;
-  border: none;
+  padding: 0px 65px;
+  text-align: center;
   border-radius: 50px;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
-  line-height: 23.44px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
