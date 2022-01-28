@@ -1,3 +1,11 @@
 function selecionarItem() {
-  document.querySelector(".item").style.boxShadow = "0px 0px 5px 5px green";
+  let itensPrato = document.querySelector(".pratos .item");
+  let elementoSelecionado = document.querySelector(".item");
+
+  if (itensPrato.classList.contains("selecionado") == true) {
+    itensPrato.classList.remove("selecionado");
+    elementoSelecionado.classList.add("selecionado");
+  } else {
+    elementoSelecionado.classList.add("selecionado");
+  }
 }
