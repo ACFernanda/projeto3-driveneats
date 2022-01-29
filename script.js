@@ -1,3 +1,7 @@
+let prato = 0;
+let bebida = 0;
+let sobremesa = 0;
+
 function selecionarPrato(botao, nomeExibicao) {
   const selecionado = document.querySelector(".pratos .selecionado");
   if (selecionado !== null) {
@@ -30,3 +34,24 @@ function selecionarSobremesa(botao, nomeExibicao) {
 
   botao.classList.add("selecionado");
 }
+
+function alterarBotao() {
+  const fecharPedido = document.querySelector(".finalizar");
+  if (prato !== 0 && bebida !== 0 && sobremesa !== 0) {
+    fecharPedido.classList.add("finalizar-verde");
+    fecharPedido.innerHTML = "Fechar pedido";
+  }
+}
+
+/*function alterarBotao() {
+  let fecharPedido = document.querySelector(".finalizar");
+
+  if (
+    ".pratos .selecionado" == true &&
+    ".bebidas .selecionado" == true &&
+    ".sobremesas .selecionado" == true
+  ) {
+    fecharPedido.classList.add("finalizar-verde");
+    fecharPedido.innerHTML = "Fechar pedido";
+  }
+}*/

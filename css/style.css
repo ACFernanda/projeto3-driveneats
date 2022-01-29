@@ -82,7 +82,7 @@ h3 {
 }
 
 .selecionado {
-  box-shadow: 0px 0px 5px 5px green;
+  box-shadow: 0px 0px 5px 5px #32b72f;
 }
 
 .item img {
@@ -146,6 +146,7 @@ footer {
   padding: 0px 65px;
   text-align: center;
   border-radius: 50px;
+  border: none;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -153,4 +154,8 @@ footer {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.finalizar-verde {
+  background-color: #32b72f;
 }
