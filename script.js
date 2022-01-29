@@ -50,7 +50,7 @@ function selecionarSobremesa(botao, nomeExibicao, valorSobremesa) {
 
 function confirmarPedido() {
   const nome = prompt("Qual é seu nome?");
-  const endereço = prompt("Qual é seu endereço?");
+  const endereco = prompt("Qual é seu endereço?");
   let mensagem;
   total = precoPrato + precoBebida + precoSobremesa;
   mensagem =
@@ -61,7 +61,11 @@ function confirmarPedido() {
     "\n- Sobremesa: " +
     sobremesa +
     "\nTotal: R$ " +
-    total.toFixed(2);
+    total.toFixed(2) +
+    "\nNome: " +
+    nome +
+    "\nEndereço: " +
+    endereco;
 
   let pedido = encodeURIComponent(mensagem);
 
