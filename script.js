@@ -50,25 +50,27 @@ function selecionarSobremesa(botao, nomeExibicao, valorSobremesa) {
 }
 
 function fecharPedido() {
-  const confirmar = document.querySelector(".confirmacao");
-  confirmar.classList.remove("esconder");
+  if (prato !== 0 && bebida !== 0 && sobremesa !== 0) {
+    const confirmar = document.querySelector(".confirmacao");
+    confirmar.classList.remove("esconder");
 
-  const nomePrato = document.querySelector(".nome-prato");
-  const nomeBebida = document.querySelector(".nome-bebida");
-  const nomeSobremesa = document.querySelector(".nome-sobremesa");
-  const valorPrato = document.querySelector(".preco-prato");
-  const valorBebida = document.querySelector(".preco-bebida");
-  const valorSobremesa = document.querySelector(".preco-sobremesa");
-  const valorTotal = document.querySelector(".preco-total");
-  total = precoPrato + precoBebida + precoSobremesa;
+    const nomePrato = document.querySelector(".nome-prato");
+    const nomeBebida = document.querySelector(".nome-bebida");
+    const nomeSobremesa = document.querySelector(".nome-sobremesa");
+    const valorPrato = document.querySelector(".preco-prato");
+    const valorBebida = document.querySelector(".preco-bebida");
+    const valorSobremesa = document.querySelector(".preco-sobremesa");
+    const valorTotal = document.querySelector(".preco-total");
+    total = precoPrato + precoBebida + precoSobremesa;
 
-  nomePrato.innerHTML = prato;
-  nomeBebida.innerHTML = bebida;
-  nomeSobremesa.innerHTML = sobremesa;
-  valorPrato.innerHTML = precoPrato.toFixed(2).replace(".", ",");
-  valorBebida.innerHTML = precoBebida.toFixed(2).replace(".", ",");
-  valorSobremesa.innerHTML = precoSobremesa.toFixed(2).replace(".", ",");
-  valorTotal.innerHTML = "R$ " + total.toFixed(2).replace(".", ",");
+    nomePrato.innerHTML = prato;
+    nomeBebida.innerHTML = bebida;
+    nomeSobremesa.innerHTML = sobremesa;
+    valorPrato.innerHTML = precoPrato.toFixed(2).replace(".", ",");
+    valorBebida.innerHTML = precoBebida.toFixed(2).replace(".", ",");
+    valorSobremesa.innerHTML = precoSobremesa.toFixed(2).replace(".", ",");
+    valorTotal.innerHTML = "R$ " + total.toFixed(2).replace(".", ",");
+  }
 }
 
 function cancelar() {
