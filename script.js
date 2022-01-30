@@ -63,7 +63,7 @@ function confirmarPedido() {
     sobremesa +
     "\nTotal: R$ " +
     total.toFixed(2) +
-    "\nNome: " +
+    "\n\nNome: " +
     nome +
     "\nEndereço: " +
     endereco;

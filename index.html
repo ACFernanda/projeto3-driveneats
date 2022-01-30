@@ -45,7 +45,7 @@
           <button
             class="item"
             data-identifier="food-option"
-            onclick="selecionarPrato(this, 'Pzfzão', 18.90)"
+            onclick="selecionarPrato(this, 'Pfzão', 18.90)"
           >
             <img src="imagens/pf.jpg" />
             <p data-identifier="food-title">Pfzão</p>
@@ -104,7 +104,7 @@
             <p data-identifier="food-title">Suco</p>
             <p>De caixinha, 300ml</p>
             <p data-identifier="food-price">R$ 6,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -116,7 +116,7 @@
             <p data-identifier="food-title">Coquinha gelada</p>
             <p>Lata 350ml</p>
             <p data-identifier="food-price">R$ 4,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -128,7 +128,7 @@
             <p data-identifier="food-title">Chá</p>
             <p>Não inlcui água quente</p>
             <p data-identifier="food-price">R$ 3,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -140,7 +140,7 @@
             <p data-identifier="food-title">Água</p>
             <p>Mata a sede, 500ml</p>
             <p data-identifier="food-price">R$ 5,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
         </div>
       </section>
@@ -157,7 +157,7 @@
             <p data-identifier="food-title">Donut</p>
             <p>Donut rosa</p>
             <p data-identifier="food-price">R$ 5,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -169,7 +169,7 @@
             <p data-identifier="food-title">Cupcake</p>
             <p>Bolo caro</p>
             <p data-identifier="food-price">R$ 8,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -181,7 +181,7 @@
             <p data-identifier="food-title">Bolo</p>
             <p>Fatia bolo de chocolate</p>
             <p data-identifier="food-price">R$ 7,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -193,7 +193,7 @@
             <p data-identifier="food-title">Palha Italiana</p>
             <p>Brigadeiro com biscoito</p>
             <p data-identifier="food-price">R$ 3,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
 
           <button
@@ -205,7 +205,7 @@
             <p data-identifier="food-title">Pudim</p>
             <p>Apenas pudim</p>
             <p data-identifier="food-price">R$ 6,90</p>
-            <ion-icon class="icone esconder" name="checkmark-circle"></ion-icon>
+            <ion-icon class="icone" name="checkmark-circle"></ion-icon>
           </button>
         </div>
       </section>
@@ -216,6 +216,28 @@
         Selecione os 3 itens para fechar o pedido
       </button>
     </footer>
+
+    <div class="esconder confirmacao">
+      <div class="caixa-verde">
+        <span>Confirme seu pedido</span>
+        <div class="caixa-pedido">
+          <div class="coluna-esquerda">
+            <p>Prato</p>
+            <p>Bebida</p>
+            <p>Sobremesa</p>
+            <p>TOTAL</p>
+          </div>
+          <div class="coluna-direita">
+            <p>valor prato</p>
+            <p>valor bebida</p>
+            <p>valor sobremesa</p>
+            <p>valor TOTAL</p>
+          </div>
+        </div>
+        <button class="tudo-certo">Tudo certo, pode pedir!</button>
+        <button class="cancelar">Cancelar</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
