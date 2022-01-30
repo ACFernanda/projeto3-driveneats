@@ -21,7 +21,9 @@ function selecionarPrato(botao, nomeExibicao, valorPrato) {
   }
   prato = nomeExibicao;
   precoPrato = valorPrato;
+
   botao.classList.add("selecionado");
+
   alterarBotao();
 }
 
@@ -40,7 +42,6 @@ function selecionarSobremesa(botao, nomeExibicao, valorSobremesa) {
   const selecionado = document.querySelector(".sobremesas .selecionado");
   if (selecionado !== null) {
     selecionado.classList.remove("selecionado");
-    selecionado.classList.remove("icone");
   }
   sobremesa = nomeExibicao;
   precoSobremesa = valorSobremesa;

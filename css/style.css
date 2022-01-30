@@ -4,6 +4,7 @@
 
 body {
   background-color: #e5e5e5;
+  position: relative;
 }
 
 header {
@@ -129,7 +130,15 @@ h3 {
 }
 
 .icone {
-  color: white;
+  color: #ffffff;
+  font-size: 22px;
+  position: absolute;
+  right: 12px;
+  bottom: 17px;
+}
+
+.selecionado .icone {
+  color: #32b72f;
   font-size: 22px;
   position: absolute;
   right: 12px;
