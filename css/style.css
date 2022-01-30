@@ -74,8 +74,9 @@ h3 {
   background-color: #ffffff;
   border-radius: 9px;
   margin-top: 7px;
-  margin-left: 19px;
+  margin-left: 14px;
   margin-bottom: 15px;
+  margin-right: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -85,7 +86,7 @@ h3 {
 }
 
 .selecionado {
-  box-shadow: 0px 0px 5px 5px #32b72f;
+  box-shadow: inset 0px 0px 0px 5px #32b72f;
 }
 
 .item img {
@@ -242,6 +243,10 @@ a {
   margin-bottom: 13px;
 }
 
+.coluna-esquerda p:last-child {
+  font-weight: 700;
+}
+
 .coluna-direita p {
   font-family: roboto;
   font-weight: 400;
@@ -249,6 +254,10 @@ a {
   color: white;
   margin-bottom: 13px;
   text-align: right;
+}
+
+.coluna-direita p:last-child {
+  font-weight: 700;
 }
 
 .tudo-certo {
