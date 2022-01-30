@@ -212,30 +212,32 @@
     </main>
 
     <footer>
-      <button class="finalizar" onclick="confirmarPedido()">
+      <button class="finalizar" onclick="fecharPedido()">
         Selecione os 3 itens para fechar o pedido
       </button>
     </footer>
 
     <div class="esconder confirmacao">
-      <div class="caixa-verde">
+      <div class="caixa-verde" data-identifier="confirmation-dialog">
         <span>Confirme seu pedido</span>
         <div class="caixa-pedido">
           <div class="coluna-esquerda">
-            <p>Prato</p>
-            <p>Bebida</p>
-            <p>Sobremesa</p>
+            <p class="nome-prato">Prato</p>
+            <p class="nome-bebida">Bebida</p>
+            <p class="nome-sobremesa">Sobremesa</p>
             <p>TOTAL</p>
           </div>
           <div class="coluna-direita">
-            <p>valor prato</p>
-            <p>valor bebida</p>
-            <p>valor sobremesa</p>
-            <p>valor TOTAL</p>
+            <p class="preco-prato">valor prato</p>
+            <p class="preco-bebida">valor bebida</p>
+            <p class="preco-sobremesa">valor sobremesa</p>
+            <p class="preco-total">preco total</p>
           </div>
         </div>
-        <button class="tudo-certo">Tudo certo, pode pedir!</button>
-        <button class="cancelar">Cancelar</button>
+        <button class="tudo-certo" onclick="finalizarPedido()">
+          Tudo certo, pode pedir!
+        </button>
+        <button class="cancelar" onclick="cancelar()">Cancelar</button>
       </div>
     </div>
 

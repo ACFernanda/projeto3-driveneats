@@ -229,7 +229,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin-top: 28px;
 }
@@ -252,7 +252,7 @@ a {
 }
 
 .tudo-certo {
-  width: 80%;
+  width: 95%;
   height: 80px;
   font-family: roboto;
   font-size: 22px;
